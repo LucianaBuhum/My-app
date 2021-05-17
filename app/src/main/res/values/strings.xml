@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Isme</string>
+    <string name="start">Start</string>
+    <string name="novice">Novice</string>
+    <string name="renaissance">Renaissance</string>
+    <string name="baroc_rococo">Baroc &amp; Rococo</string>
+    <string name="_19th_century">19th century</string>
+    <string name="modernism">Modernism</string>
+    <string name="postmodernism">PostModernism</string>
+    <string name="arsty">Arsty</string>
+    <string name="master">Master</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question">Question?</string>
+</resources>
