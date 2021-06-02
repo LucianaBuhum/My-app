@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Isme">
-        <activity android:name=".QuizQuestionsActivity"></activity>
+        <activity android:name=".LearningActivity"></activity>
+        <activity android:name=".FunFactsActivity" />
+        <activity android:name=".Result" />
+        <activity android:name=".QuizQuestionsActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

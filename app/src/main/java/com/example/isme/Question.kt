@@ -1,9 +1,9 @@
 package com.example.isme
 
-data class Question (
+data class Question(
     val id: Int,
     val question: String,
-    val image: Int,
+    val image: Int?,
     val optionOne: String,
     val optionTwo: String,
     val optionThree: String,

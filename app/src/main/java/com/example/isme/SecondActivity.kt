@@ -1,9 +1,9 @@
 package com.example.isme
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,11 +13,42 @@ class SecondActivity : AppCompatActivity() {
         val button2 = findViewById<Button>(R.id.button2)
         val button3 = findViewById<Button>(R.id.button3)
         val button4 = findViewById<Button>(R.id.button4)
-        button1.setOnClickListener(){
+        val user = intent.getStringExtra(Constants.USER_NAME)
+        button1.setOnClickListener{
             button1.setBackgroundResource(R.drawable.button_pressed)
             val intent = Intent(this, QuizQuestionsActivity::class.java)
+            intent.putExtra(Constants.USER_NAME, user)
+            intent.putExtra("from", "1")
             startActivity(intent)
             finish()
+
+
+
+        }
+        button2.setOnClickListener{
+            button2.setBackgroundResource(R.drawable.button_pressed)
+            val intent = Intent(this, QuizQuestionsActivity::class.java).putExtra("from", "2")
+            intent.putExtra(Constants.USER_NAME, user)
+            startActivity(intent)
+            finish()
+
+
+        }
+        button3.setOnClickListener{
+            button3.setBackgroundResource(R.drawable.button_pressed)
+            val intent = Intent(this, QuizQuestionsActivity::class.java).putExtra("from", "3")
+            intent.putExtra(Constants.USER_NAME, user)
+            startActivity(intent)
+            finish()
+
+        }
+        button4.setOnClickListener{
+            button4.setBackgroundResource(R.drawable.button_pressed)
+            val intent = Intent(this, QuizQuestionsActivity::class.java).putExtra("from", "4")
+            intent.putExtra(Constants.USER_NAME, user)
+            startActivity(intent)
+            finish()
+
         }
     }
 }
