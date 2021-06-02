@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:gravity="center"
-        android:text="You are a step closer to become a Connoisseur"
-        android:textColor="#363A43"
+        android:text="You are a step closer in becoming a Connoisseur!"
+        android:textColor="@color/purple_700"
         android:textSize="25sp"
         android:textStyle="bold"
         />
@@ -26,29 +26,19 @@
         android:layout_width="wrap_content"
         android:layout_height="212dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/trophy" />
+        android:src="@drawable/dee" />
     <TextView
         android:id="@+id/tv_congr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:gravity="center"
-        android:text="Congratulations"
+        android:text="Congrats!"
         android:textColor="#363A43"
         android:textSize="25sp"
         android:textStyle="bold"
         />
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:gravity="center"
-        android:text="Username"
-        android:textColor="#363A43"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        />
+
 
     <TextView
         android:id="@+id/tv_score"
@@ -56,10 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:textColor="@android:color/secondary_text_dark"
-        android:textSize="20sp"
+        android:textColor="#363A43"
+        android:textSize="25sp"
         android:textStyle="bold"
-        tools:text="Your score is 7 out of 10" />
+        tools:text="Score:  7/10" />
     <Button
         android:id="@+id/finishBtn"
         android:layout_width="match_parent"

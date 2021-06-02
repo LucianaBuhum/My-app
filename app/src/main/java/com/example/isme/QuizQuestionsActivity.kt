@@ -18,14 +18,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private var zQuestionsList: ArrayList<Question>? = null
     private var zSelectedOptionPosition: Int = 0
     private var zCorrectAnswers: Int = 0
-    private var zUserName: String? = null
     private var selectedQuiz: String? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
 
-         zUserName = intent.getStringExtra(Constants.USER_NAME)
 
          selectedQuiz = intent.getStringExtra("from" )
          when{
@@ -117,7 +115,6 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                         }
                         else -> {
                            val intent = Intent(this, Result::class.java)
-                            intent.putExtra(Constants.USER_NAME, zUserName)
                             intent.putExtra(Constants.CORRECT_ANSWERS, zCorrectAnswers)
                             intent.putExtra(Constants.TOTAL_QUESTIONS, zQuestionsList!!.size)
                             intent.putExtra(Constants.CATEGORY, selectedQuiz)

@@ -30,7 +30,7 @@ class FunFactsActivity : AppCompatActivity() {
                                 tv_fact_two.text = Constants.FUN_FACT_NINETH_TWO
                                 tv_fact_three.text = Constants.FUN_FACT_NINETH_THREE
                                 tv_fact_four.text = Constants.FUN_FACT_NINETH_FOUR
-                                tv_fact_five.text =Constants.FUN_FACT_BAROC_FIVE
+                                tv_fact_five.text =Constants.FUN_FACT_NINETH_FIVE
                                 iv_image_fact.setImageResource(R.drawable.womanwithparasol)}
 
         cat.equals("4")->{tv_fact_one.text= Constants.FUN_FACT_MODERNISM_ONE

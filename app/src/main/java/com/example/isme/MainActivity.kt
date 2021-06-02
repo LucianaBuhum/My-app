@@ -16,15 +16,12 @@ class MainActivity : AppCompatActivity() {
 
        val mainBtn = findViewById<Button>(R.id.mainBtn)
         mainBtn.setOnClickListener{
-            if(et_name.text.toString().isEmpty()){
-                Toast.makeText(this,"Please enter username", Toast.LENGTH_SHORT).show()
-            }
-            else{
+
                 val intent = Intent(this, SecondActivity::class.java)
-                intent.putExtra(Constants.USER_NAME, et_name.text.toString())
+
                 startActivity(intent)
                 finish()
-            }
+
 
         }
     }
